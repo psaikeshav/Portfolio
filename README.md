@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A Minimal Design Portfolio
+A Minimal Design Portfolio.
 
 ## About
 
