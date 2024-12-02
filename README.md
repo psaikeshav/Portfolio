@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is a personal portfolio website showcasing my projects, skills, and contact information.
+A Minimal Design Portfolio
 
 ## About
 
