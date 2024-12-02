@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Keshav</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <a id="main-link" href="/">
+            <div class="logo">Sai Keshav</div>
+        </a>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <a id="main-link" href="/">
+        <div class="logo">Sai Keshav</div>
+    </a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <i class="fa-solid fa-envelope fa-2xl"  id="space"></i>
+            <p><a href="mailto:psaikeshav@gmail.com">psaikeshav@gmail.com</a></p>
+            <i class="fa-brands fa-linkedin fa-2xl" id="space"></i>
+            <p><a href="https://www.linkedin.com/in/saikeshav/">LinkedIn</a></p>
+            <i class="fa-brands fa-github fa-2xl" id="space"></i>
+            <p><a href="https://github.com/psaikeshav">Github</a></p>
+            <i class="fa-brands fa-x-twitter fa-2xl" id="space"></i>
+            <p><a href="https://twitter.com/Keshavsayz">Twitter</a></p>
+            <i class="fa-brands fa-instagram fa-2xl" id="space"></i>
+            <p><a href="https://instagram.com/itz_keshav">Instagram</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>Made with <i class="fa-solid fa-heart" style="color: #9d0c0c;"></i> by Sai Keshav</p>
+</footer>
+<script src="https://kit.fontawesome.com/61b2fd30b0.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
