@@ -1,6 +1,6 @@
-# Sai Keshav's Portfolio
+# Portfolio Website
 
-This is a personal portfolio website showcasing my projects, skills, and contact information.
+A Minimal Design Portfolio.
 
 ## About
 
@@ -23,4 +23,4 @@ This portfolio website is designed to provide an overview of my professional bac
 
 ## Contact
 
-You can reach me at psaikeshav@gmail.com or connect with me on LinkedIn.
+You can reach me at psaikeshav@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/saikeshav/).
