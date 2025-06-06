@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <meta name="description"
-        content="Hi! I’m Sai Keshav, a passionate Computer Science student with a love for problem-solving and building innovative solutions. I thrive on exploring new technologies and creating impactful, user-centric applications. Always eager to learn and grow, I aim to make technology accessible and meaningful.">
+        content="Hi! I'm Sai Keshav, a passionate Computer Science student with a love for problem-solving and building innovative solutions. I thrive on exploring new technologies and creating impactful, user-centric applications. Always eager to learn and grow, I aim to make technology accessible and meaningful.">
     <meta name="keywords" content="Sai Keshav, portfolio, web developer">
     <meta name="author" content="Sai Keshav">
 </head>
@@ -48,23 +48,97 @@
             </div>
         </div>
     </nav>
-    </section>
+    
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <i class="fa-solid fa-envelope fa-2xl" id="space"></i>
-                <p><a href="mailto:psaikeshav@gmail.com">psaikeshav@gmail.com</a></p>
-                <i class="fa-brands fa-linkedin fa-2xl" id="space"></i>
-                <p><a href="https://www.linkedin.com/in/saikeshav/">LinkedIn</a></p>
-                <i class="fa-brands fa-github fa-2xl" id="space"></i>
-                <p><a href="https://github.com/psaikeshav">Github</a></p>
-                <i class="fa-brands fa-x-twitter fa-2xl" id="space"></i>
-                <p><a href="https://twitter.com/Keshavsayz">Twitter</a></p>
-                <i class="fa-brands fa-instagram fa-2xl" id="space"></i>
-                <p><a href="https://instagram.com/itz_keshav">Instagram</a></p>
-            </div>
+        <div class="contact-details-container">
+            <a href="mailto:psaikeshav@gmail.com" class="contact-card-link">
+                <div class="contact-card">
+                    <div class="contact-icon-container">
+                        <i class="fa-solid fa-envelope fa-2xl contact-icon"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>psaikeshav@gmail.com</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/saikeshav/" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <div class="contact-icon-container">
+                        <i class="fa-brands fa-linkedin fa-2xl contact-icon"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://github.com/psaikeshav" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <div class="contact-icon-container">
+                        <i class="fa-brands fa-github fa-2xl contact-icon"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>GitHub</h3>
+                        <p>View my code</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://twitter.com/Keshavsayz" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <div class="contact-icon-container">
+                        <i class="fa-brands fa-x-twitter fa-2xl contact-icon"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Twitter</h3>
+                        <p>Follow me</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://instagram.com/itz_keshav" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <div class="contact-icon-container">
+                        <i class="fa-brands fa-instagram fa-2xl contact-icon"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Instagram</h3>
+                        <p>Connect with me</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Contact Form with FormSubmit -->
+        <div class="contact-form-container">
+            <h2 class="form-title">Send me a message</h2>
+            <form class="contact-form" action="https://formsubmit.co/psaikeshav@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                <input type="hidden" name="_autoresponse" value="Thank you for your message! I'll get back to you soon.">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost:8000/thank-you.html">
+                
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-color-1 submit-btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -72,6 +146,23 @@
     </footer>
     <script src="https://kit.fontawesome.com/61b2fd30b0.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    
+    <!-- Form redirect handler -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form');
+            const submitBtn = document.querySelector('.submit-btn');
+            
+            form.addEventListener('submit', function(e) {
+                submitBtn.innerHTML = 'Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(function() {
+                    window.location.href = 'thank-you.html';
+                }, 2000); 
+            });
+        });
+    </script>
 </body>
 
 </html>
