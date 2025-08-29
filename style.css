@@ -166,16 +166,16 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding: 4vh 0;
+  padding: 3vh 0;
   margin: 0 10rem;
   min-height: fit-content;
 }
 
 .section-container {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 /* PROFILE SECTION */
@@ -320,12 +320,12 @@ section {
 
 #about {
   position: relative;
-  padding: 4vh 0;
+  padding: 2vh 0;
 }
 
 .about-containers {
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .about-details-container {
@@ -361,14 +361,14 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1.2rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .section-container {
@@ -418,7 +418,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .experience-details-container {
@@ -432,7 +432,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1.2rem;
   justify-content: space-around;
 }
 
@@ -451,7 +451,7 @@ article .icon {
 /* JOB SECTION */
 
 #job-experience-section {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .job-company-logo {
@@ -514,6 +514,30 @@ article .icon {
   font-size: 0.9rem;
 }
 
+.certification-link {
+  display: inline-flex;
+  align-items: center;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #007bff;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.certification-link:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.certification-link i {
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -545,6 +569,32 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.more-projects-container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.more-projects-btn {
+  width: auto;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: none;
+  transition: all 300ms ease;
+}
+
+.more-projects-btn:hover {
+  background-color: rgb(33, 33, 33);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.more-projects-btn i {
+  margin-right: 0.5rem;
 }
 
 /* CONTACT */
