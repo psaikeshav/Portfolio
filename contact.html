@@ -114,15 +114,12 @@
             </a>
         </div>
         
-        <!-- Contact Form with FormSubmit -->
+        <!-- Contact Form with Web3Forms -->
         <div class="contact-form-container">
             <h2 class="form-title">Send me a message</h2>
-            <form class="contact-form" action="https://formsubmit.co/psaikeshav@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
-                <input type="hidden" name="_autoresponse" value="Thank you for your message! I'll get back to you soon.">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://saikeshav.me/thank-you.html">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="b9dec9c8-7d83-4885-9e32-dce0c30aed37">
+                <input type="hidden" name="redirect" value="http://saikeshav.tech/thank-you.html">
 
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -146,23 +143,6 @@
     </footer>
     <script src="https://kit.fontawesome.com/61b2fd30b0.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    
-    <!-- Form redirect handler -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.contact-form');
-            const submitBtn = document.querySelector('.submit-btn');
-            
-            form.addEventListener('submit', function(e) {
-                submitBtn.innerHTML = 'Sending...';
-                submitBtn.disabled = true;
-                
-                setTimeout(function() {
-                    window.location.href = 'thank-you.html';
-                }, 2000); 
-            });
-        });
-    </script>
 </body>
 
 </html>
