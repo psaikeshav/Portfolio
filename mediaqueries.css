@@ -577,30 +577,61 @@
     }
 }
 
-/* Thank you page responsive */
-.thank-you-container {
-  padding: 2rem;
-  margin: 0 1rem;
-}
+@media screen and (max-width: 600px) {
+  /* Thank you page responsive */
+  .thank-you-container {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
 
-.thank-you-actions {
-  flex-direction: column;
-  align-items: center;
-}
+  .thank-you-actions {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Contact page responsive adjustments */
-.contact-details-container {
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+  /* Contact page responsive adjustments */
+  .contact-details-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
 
-#contact {
-  min-height: fit-content;
-  padding: 1.5rem 0 3rem 0;
-}
+  #contact {
+    min-height: fit-content;
+    padding: 1.5rem 0 3rem 0;
+  }
 
-.contact-card {
-  padding: 1.5rem;
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  /* 404 Error page responsive */
+  .error-section {
+    min-height: 60vh;
+    padding: 1.5rem;
+  }
+
+  .error-code {
+    font-size: 5rem;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .error-message {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .error-section .btn-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .error-section .btn {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
